@@ -6,7 +6,7 @@ const Nav = () => {
   return (
     <StyledNav>
       <div className="nav-left">
-        <img src={images.brandIcon} alt="shortly" />
+        <img src={images.logo} alt="shortly" />
         <a href="#">features</a>
         <a href="#">pricing</a>
         <a href="#">resources</a>
