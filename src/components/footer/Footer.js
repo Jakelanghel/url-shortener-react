@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <StyledFooter>
       <div className="container-footer-logo">
-        <img src={images.logo} alt="shortly" />
+        <img src={images.logo} alt="shortly" className="logo" />
       </div>
 
       <div className="container-footer-links">

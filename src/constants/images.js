@@ -12,6 +12,7 @@ import customizeIcon from "../assets/icons/icon-fully-customizable.svg";
 import instagramIcon from "../assets/icons/icon-instagram.svg";
 import pinterestIcon from "../assets/icons/icon-pinterest.svg";
 import twitterIcon from "../assets/icons/icon-twitter.svg";
+import menuIcon from "../assets/icons/menu-icon.svg";
 
 // LOGO
 import logo from "../assets/logo/logo.svg";
@@ -33,6 +34,7 @@ export const images = {
   instagramIcon,
   pinterestIcon,
   twitterIcon,
+  menuIcon,
 
   // LOGO
   logo,
