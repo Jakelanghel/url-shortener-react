@@ -1,6 +1,6 @@
 import React from "react";
 import { StyledAbout } from "./About.Styled";
-import { images } from "../../../../constants/images";
+import { images } from "../../../constants/images";
 
 const About = () => {
   return (

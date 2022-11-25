@@ -17,9 +17,9 @@ export const StyledShortener = styled.div`
 
   .shortener-input {
     width: 100%;
-    font-size: 1.15rem;
+    font-size: 1rem;
     color: var(--grayish-violet);
-    padding: 0.5rem;
+    padding: 0.75rem 1rem;
     border: none;
     border-radius: 7px;
   }

@@ -1,6 +1,6 @@
 import React from "react";
 import { StyledCta } from "./Cta.Styled";
-import { GetStartedBtn } from "../../shared/get-started-btn/GetStartedBtn.Styled";
+import { GetStartedBtn } from "../../components/get-started-btn/GetStartedBtn.Styled";
 
 const Cta = () => {
   return (

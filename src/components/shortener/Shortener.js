@@ -14,14 +14,15 @@ const Shortener = () => {
 
   return (
     <StyledShortener>
-      <label htmlFor="shortener form">
+      <label htmlFor="shortener-form">
         <form action="" onSubmit={handleSubmit} id="shortener form">
           <input
             type="text"
-            className="shortener-input"
             value={input}
             onChange={handleChange}
             placeholder="Shorten a link here.."
+            className="shortener-input"
+            id="shortener-form"
           />
           <input type="submit" value="shorten it!" className="shortener-btn" />
         </form>

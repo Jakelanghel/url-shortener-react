@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { images } from "../../../constants/images";
+import { images } from "../../constants/images";
 
 export const StyledCta = styled.div`
   width: 100%;

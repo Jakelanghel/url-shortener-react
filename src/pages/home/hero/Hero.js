@@ -1,8 +1,8 @@
 import React from "react";
-import { images } from "../../../../constants/images";
+import { images } from "../../../constants/images";
 import { StyledHero } from "./Hero.Styled";
-import { GetStartedBtn } from "../../../shared/get-started-btn/GetStartedBtn.Styled";
-import Shortener from "../../../shortener/Shortener";
+import { GetStartedBtn } from "../../../components/get-started-btn/GetStartedBtn.Styled";
+import Shortener from "../../../components/shortener/Shortener";
 
 const Hero = () => {
   return (
