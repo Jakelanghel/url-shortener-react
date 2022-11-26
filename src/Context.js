@@ -4,10 +4,18 @@ import { fetchAPI } from "./services/fetchAPI";
 const Context = React.createContext();
 const ContextProvider = ({ children }) => {
   const [appState, setAppState] = useState({
+    navIsOpen: false,
     input: "",
     data: [],
     error: false,
   });
+
+  const toggleNav = () => {
+    setAppState((oldState) => ({
+      ...oldState,
+      navIsOpen: !oldState.navIsOpen,
+    }));
+  };
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -51,6 +59,8 @@ const ContextProvider = ({ children }) => {
         handleChange,
         handleSubmit,
         setAppState,
+        toggleNav,
+        navIsOpen: appState.navIsOpen,
         data: appState.data,
         input: appState.input,
         error: appState.error,

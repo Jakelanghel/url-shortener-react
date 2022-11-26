@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const StyledAbout = styled.section`
   width: 100%;
   background-color: var(--light-gray);
-  padding-top: 8rem;
+  padding-top: 7.5rem;
   padding-bottom: 5rem;
 
   position: relative;
@@ -53,7 +53,7 @@ export const StyledAbout = styled.section`
   .line::before {
     content: "";
     width: 7px;
-    height: 1000px;
+    height: 900px;
     background-color: var(--cyan);
 
     position: absolute;

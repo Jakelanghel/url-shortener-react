@@ -2,8 +2,13 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import { StyledNav } from "./Nav.Styled";
 import { images } from "../../constants/images";
+import { Context } from "../../Context";
+import { AnimatePresence } from "framer-motion";
+import ContainerMenu from "../nav/container-menu/ContainerMenu";
 
 const Nav = () => {
+  const { navIsOpen, toggleNav } = React.useContext(Context);
+  console.log(navIsOpen);
   return (
     <StyledNav className="side-padding">
       <div className="container-logo">
@@ -12,26 +17,15 @@ const Nav = () => {
         </NavLink>
       </div>
 
-      <div className="container-menu">
-        <div className="nav-left">
-          <NavLink to="/features" className="nav-link">
-            features
-          </NavLink>
-          <NavLink to="/pricing" className="nav-link">
-            pricing
-          </NavLink>
-          <NavLink to="/resources" className="nav-link">
-            resources
-          </NavLink>
-        </div>
-        <div className="nav-right">
-          <a href="#">login</a>
-          <button>sign up</button>
-        </div>
-      </div>
+      <AnimatePresence>{navIsOpen && <ContainerMenu />}</AnimatePresence>
 
       <div className="container-menu-icon">
-        <img src={images.menuIcon} alt="shortly" className="menu-icon" />
+        <img
+          src={images.menuIcon}
+          alt="shortly"
+          className="menu-icon"
+          onClick={toggleNav}
+        />
       </div>
     </StyledNav>
   );

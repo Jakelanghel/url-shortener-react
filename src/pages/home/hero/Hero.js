@@ -2,8 +2,35 @@ import React from "react";
 import { images } from "../../../constants/images";
 import { StyledHero } from "./Hero.Styled";
 import { GetStartedBtn } from "../../../components/get-started-btn/GetStartedBtn.Styled";
+import { Context } from "../../../Context";
+import { motion } from "framer-motion";
+import { AnimatePresence } from "framer-motion";
 
 const Hero = () => {
+  const { navIsOpen } = React.useContext(Context);
+
+  const heroImgVariants = navIsOpen
+    ? {
+        hidden: {
+          opacity: 1,
+        },
+        visible: {
+          zIndex: -1,
+          opacity: 0,
+          transition: {
+            delay: 0.25,
+          },
+        },
+      }
+    : {
+        hidden: {
+          opacity: 1,
+        },
+        visible: {
+          opacity: 1,
+        },
+      };
+
   return (
     <StyledHero className="side-padding">
       <div className="container-hero-copy">
@@ -15,9 +42,17 @@ const Hero = () => {
         <GetStartedBtn className="btn">Get Started</GetStartedBtn>
       </div>
 
-      <div className="container-hero-img">
-        <img src={images.mainImg} alt="" className="hero-img" />
-      </div>
+      <AnimatePresence>
+        <motion.div
+          variants={heroImgVariants}
+          initial="hidden"
+          animate="visible"
+        >
+          <div className="container-hero-img">
+            <img src={images.mainImg} alt="" className={"hero-img"} />
+          </div>
+        </motion.div>
+      </AnimatePresence>
     </StyledHero>
   );
 };

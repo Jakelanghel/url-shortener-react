@@ -6,13 +6,11 @@ export const StyledNav = styled.nav`
   justify-content: space-between;
   align-items: center;
   padding-top: 1.5rem;
-
-  .container-menu {
-    display: none;
-  }
+  position: relative;
 
   .menu-icon {
-    width: 45px;
+    width: 50px;
     padding: 0.5rem;
+    padding-left: 1rem;
   }
 `;

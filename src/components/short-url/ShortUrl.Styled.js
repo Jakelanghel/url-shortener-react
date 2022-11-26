@@ -8,8 +8,8 @@ export const StyledShortUrl = styled.div`
   background: var(--white);
 
   padding: 1rem 0;
-  margin-bottom: 2rem;
   border-radius: 5px;
+  margin-bottom: 1.5rem;
 
   p {
     width: 100%;
