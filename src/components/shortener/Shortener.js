@@ -1,17 +1,10 @@
-import React, { useState } from "react";
+import React from "react";
 import { StyledShortener } from "../shortener/Shortener.Styled";
+import { Context } from "../../Context";
 
 const Shortener = () => {
-  const [input, setInput] = useState("");
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-  };
-
-  const handleChange = (e) => {
-    console.log(e);
-  };
-
+  const { handleChange, handleSubmit, input, error } =
+    React.useContext(Context);
   return (
     <StyledShortener>
       <label htmlFor="shortener-form">
@@ -21,10 +14,16 @@ const Shortener = () => {
             value={input}
             onChange={handleChange}
             placeholder="Shorten a link here.."
-            className="shortener-input"
+            className={error ? "shortener-input error" : "shortener-input"}
             id="shortener-form"
           />
-          <input type="submit" value="shorten it!" className="shortener-btn" />
+          {error ? <span className="error-txt">Please add a link</span> : ""}
+          <input
+            type="submit"
+            value="shorten it!"
+            className="shortener-btn"
+            onClick={handleSubmit}
+          />
         </form>
       </label>
     </StyledShortener>

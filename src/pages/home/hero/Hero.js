@@ -2,7 +2,6 @@ import React from "react";
 import { images } from "../../../constants/images";
 import { StyledHero } from "./Hero.Styled";
 import { GetStartedBtn } from "../../../components/get-started-btn/GetStartedBtn.Styled";
-import Shortener from "../../../components/shortener/Shortener";
 
 const Hero = () => {
   return (
@@ -19,7 +18,6 @@ const Hero = () => {
       <div className="container-hero-img">
         <img src={images.mainImg} alt="" className="hero-img" />
       </div>
-      <Shortener />
     </StyledHero>
   );
 };

@@ -1,10 +1,27 @@
 import React from "react";
-import { StyledAbout } from "./About.Styled";
 import { images } from "../../../constants/images";
+import { Context } from "../../../Context";
+
+import { StyledAbout } from "./About.Styled";
+import Shortener from "../../../components/shortener/Shortener";
+import ShortUrl from "../../../components/short-url/ShortUrl";
 
 const About = () => {
+  const { data } = React.useContext(Context);
+
+  const shortElementsArr = data.map((i) => (
+    <ShortUrl ogUrl={i.ogUrl} shortUrl={i.shortUrl} key={i.code} />
+  ));
+
   return (
     <StyledAbout className="side-padding">
+      <Shortener />
+      {shortElementsArr.length > 0 ? (
+        <div className="container-shorts">{shortElementsArr}</div>
+      ) : (
+        ""
+      )}
+
       <div className="container-about-header">
         <h2 className="title-margin">Advanced Statistics </h2>
         <p>

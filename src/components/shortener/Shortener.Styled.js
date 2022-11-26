@@ -11,9 +11,10 @@ export const StyledShortener = styled.div`
   border-radius: 10px;
 
   position: absolute;
-  bottom: -85px;
+  top: -85px;
   left: 50%;
   transform: translateX(-50%);
+  z-index: 1;
 
   .shortener-input {
     width: 100%;
@@ -22,6 +23,9 @@ export const StyledShortener = styled.div`
     padding: 0.75rem 1rem;
     border: none;
     border-radius: 7px;
+    outline: none;
+    border: solid 3px transparent;
+    position: relative;
   }
 
   .shortener-btn {
@@ -35,5 +39,25 @@ export const StyledShortener = styled.div`
     border-radius: 7px;
     border: none;
     background-color: var(--cyan);
+  }
+
+  .input {
+    color: var(--very-dark-blue);
+  }
+
+  .error {
+    border: solid 3px var(--red);
+  }
+
+  .error-txt {
+    width: 100%;
+    display: flex;
+    margin-top: 5px;
+
+    font-size: 0.75rem;
+    font-style: italic;
+    text-align: left;
+    color: var(--red);
+    opacity: 0.7;
   }
 `;

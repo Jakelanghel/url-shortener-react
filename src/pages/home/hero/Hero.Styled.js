@@ -6,7 +6,6 @@ export const StyledHero = styled.main`
   flex-direction: column;
   margin-top: 1rem;
   padding-bottom: 8rem;
-  position: relative;
 
   .container-hero-img {
     width: 100%;

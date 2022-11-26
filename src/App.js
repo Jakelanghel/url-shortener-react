@@ -1,5 +1,5 @@
 import React from "react";
-import { Route, Routes, useLocation } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import { GlobalStyles } from "./components/Global";
 
 import Nav from "./components/nav/Nav";
@@ -18,13 +18,7 @@ function App() {
 
         <Routes>
           <Route path="/" element={<Home />} />
-        </Routes>
-
-        <Routes>
           <Route path="/features" element={<Features />} />
-        </Routes>
-
-        <Routes>
           <Route path="/pricing" element={<Pricing />} />
         </Routes>
 

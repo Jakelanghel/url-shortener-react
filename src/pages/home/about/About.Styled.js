@@ -3,9 +3,10 @@ import styled from "styled-components";
 export const StyledAbout = styled.section`
   width: 100%;
   background-color: var(--light-gray);
-
   padding-top: 8rem;
   padding-bottom: 5rem;
+
+  position: relative;
 
   h2 {
     font-size: 1.75rem;
@@ -62,5 +63,9 @@ export const StyledAbout = styled.section`
 
   p {
     font-size: 1rem;
+  }
+
+  .container-shorts {
+    margin-bottom: 5rem;
   }
 `;
