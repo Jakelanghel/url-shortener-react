@@ -17,7 +17,7 @@ const Shortener = () => {
             className={error ? "shortener-input error" : "shortener-input"}
             id="shortener-form"
           />
-          {error ? <span className="error-txt">Please add a link</span> : ""}
+          {error ? <span className="error-txt">Please add a link</span> : null}
           <input
             type="submit"
             value="shorten it!"

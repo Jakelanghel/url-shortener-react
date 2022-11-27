@@ -1,14 +1,41 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { fetchAPI } from "./services/fetchAPI";
 
 const Context = React.createContext();
+
 const ContextProvider = ({ children }) => {
+  const width = window.screen.width;
   const [appState, setAppState] = useState({
     navIsOpen: false,
     input: "",
     data: [],
     error: false,
+    screenWidth: width,
   });
+
+  useEffect(() => {
+    const handleResize = () => {
+      const width = window.screen.width;
+      console.log(width);
+      width >= 900
+        ? setAppState((oldState) => ({
+            ...oldState,
+            navIsOpen: true,
+            screenWidth: width,
+          }))
+        : setAppState((oldState) => ({
+            ...oldState,
+            navIsOpen: false,
+            screenWidth: width,
+          }));
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
 
   const toggleNav = () => {
     setAppState((oldState) => ({
@@ -64,6 +91,7 @@ const ContextProvider = ({ children }) => {
         data: appState.data,
         input: appState.input,
         error: appState.error,
+        screenWidth: appState.screenWidth,
       }}
     >
       {children}

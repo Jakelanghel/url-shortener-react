@@ -13,17 +13,15 @@ function App() {
   return (
     <div>
       <GlobalStyles />
-      <div className="container-app">
-        <Nav />
+      <Nav />
 
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/features" element={<Features />} />
-          <Route path="/pricing" element={<Pricing />} />
-        </Routes>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/features" element={<Features />} />
+        <Route path="/pricing" element={<Pricing />} />
+      </Routes>
 
-        <Footer />
-      </div>
+      <Footer />
     </div>
   );
 }

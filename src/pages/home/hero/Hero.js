@@ -7,32 +7,33 @@ import { motion } from "framer-motion";
 import { AnimatePresence } from "framer-motion";
 
 const Hero = () => {
-  const { navIsOpen } = React.useContext(Context);
+  const { navIsOpen, screenWidth } = React.useContext(Context);
 
-  const heroImgVariants = navIsOpen
-    ? {
-        hidden: {
-          opacity: 1,
-        },
-        visible: {
-          zIndex: -1,
-          opacity: 0,
-          transition: {
-            delay: 0.25,
+  const heroImgVariants =
+    screenWidth >= 900 || !navIsOpen
+      ? {
+          hidden: {
+            opacity: 1,
           },
-        },
-      }
-    : {
-        hidden: {
-          opacity: 1,
-        },
-        visible: {
-          opacity: 1,
-        },
-      };
+          visible: {
+            opacity: 1,
+          },
+        }
+      : {
+          hidden: {
+            opacity: 1,
+          },
+          visible: {
+            zIndex: -1,
+            opacity: 0,
+            transition: {
+              delay: 0.25,
+            },
+          },
+        };
 
   return (
-    <StyledHero className="side-padding">
+    <StyledHero>
       <div className="container-hero-copy">
         <h1 className="title-margin">More than just shorter links</h1>
         <p>
@@ -47,10 +48,11 @@ const Hero = () => {
           variants={heroImgVariants}
           initial="hidden"
           animate="visible"
+          className="container-hero-img"
         >
-          <div className="container-hero-img">
-            <img src={images.mainImg} alt="" className={"hero-img"} />
-          </div>
+          {/* <div className="container-hero-img"> */}
+          <img src={images.mainImg} alt="" className={"hero-img"} />
+          {/* </div> */}
         </motion.div>
       </AnimatePresence>
     </StyledHero>

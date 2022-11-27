@@ -14,13 +14,11 @@ const About = () => {
   ));
 
   return (
-    <StyledAbout className="side-padding">
+    <StyledAbout>
       <Shortener />
       {shortElementsArr.length > 0 ? (
         <div className="container-shorts">{shortElementsArr}</div>
-      ) : (
-        ""
-      )}
+      ) : null}
 
       <div className="container-about-header">
         <h2 className="title-margin">Advanced Statistics </h2>
@@ -29,8 +27,9 @@ const About = () => {
           statistics dashboard.
         </p>
       </div>
+
       <div className="container-about-body">
-        <div className="container-about">
+        <div className="container-about ">
           <div className="container-icon">
             <img src={images.brandIcon} alt="" className="icon" />
           </div>
@@ -42,7 +41,7 @@ const About = () => {
           </p>
         </div>
 
-        <div className="container-about">
+        <div className="container-about row-2">
           <div className="container-icon">
             <img src={images.recordsIcon} alt="" className="icon" />
           </div>
@@ -54,9 +53,7 @@ const About = () => {
           </p>
         </div>
 
-        <div className="line"></div>
-
-        <div className="container-about">
+        <div className="container-about row-3">
           <div className="container-icon ">
             <img src={images.customizeIcon} alt="" className="icon" />
           </div>
@@ -67,6 +64,8 @@ const About = () => {
             customizable links, supercharging audience engagement.
           </p>
         </div>
+
+        <div className="line"></div>
       </div>
     </StyledAbout>
   );

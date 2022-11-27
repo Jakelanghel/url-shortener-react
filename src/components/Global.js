@@ -37,31 +37,36 @@ export const GlobalStyles = createGlobalStyle`
 
     }
 
-    @media screen and (min-width: 900px){
-        body {
-        font-size: 18px;
-        text-align: left;
-        
+    img {
+        display: block;
+    }
 
-    }
-    }
+   
 
     
      p {
         max-width: 325px;
         margin: 0 auto;
         color: var(--grayish-violet);
-
      }
 
 
-    .side-padding {
-        padding-left: 1.25rem;
-        padding-right: 1.25rem;
-    }
+   
 
     .title-margin {
         margin: 1rem 0;
+    }
+
+    @media screen and (min-width: 900px){
+        body {
+            font-size: 18px;
+            text-align: left;
+        }
+
+        p {
+            max-width: 550px;
+        }
+        
     }
     
 

@@ -1,19 +1,10 @@
 import styled from "styled-components";
 
 export const StyledContainerMenu = styled.div`
-  width: 350px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
-  position: absolute;
-  top: 35px;
-  left: 0;
-  z-index: 1000;
-  padding: 1rem 0;
-  border-radius: 10px;
-  background: var(--nav-bg);
 
   .nav-left,
   .nav-right {
@@ -36,7 +27,6 @@ export const StyledContainerMenu = styled.div`
     color: var(--white);
     text-decoration: none;
     padding: 1rem 0;
-    /* margin-bottom: 0.5rem; */
   }
 
   .nav-btn {
@@ -45,5 +35,39 @@ export const StyledContainerMenu = styled.div`
     border-radius: 75px;
     padding: 0.75rem 0;
     margin-bottom: 1rem;
+  }
+
+  @media screen and (min-width: 900px) {
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 3rem;
+
+    .nav-left,
+    .nav-right {
+      flex-direction: row;
+      align-items: center;
+      gap: 1.5rem;
+    }
+
+    .nav-left {
+      width: 40%;
+      justify-content: flex-start;
+      border: none;
+    }
+    .nav-right {
+      width: 40%;
+      justify-content: flex-end;
+      padding: 0;
+    }
+
+    .nav-item {
+      color: var(--grayish-violet);
+      padding: 1rem;
+    }
+
+    .nav-btn {
+      color: var(--white);
+      padding: 0.75rem 2rem;
+    }
   }
 `;

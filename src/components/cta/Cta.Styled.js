@@ -6,7 +6,7 @@ export const StyledCta = styled.div`
   padding: 5rem 2rem;
   background-color: var(--dark-violet);
   background-image: url(${images.mobileBoostBg});
-  background-position: left -20px;
+  background-size: cover;
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
@@ -22,5 +22,13 @@ export const StyledCta = styled.div`
 
   .btn {
     margin-top: 1rem;
+  }
+
+  @media screen and (min-width: 900px) {
+    background-image: url(${images.desktopBoostBg});
+
+    p {
+      font-size: 2.25rem;
+    }
   }
 `;

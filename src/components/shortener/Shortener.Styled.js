@@ -47,6 +47,7 @@ export const StyledShortener = styled.div`
 
   .error {
     border: solid 3px var(--red);
+    color: var(--red);
   }
 
   .error-txt {
@@ -59,5 +60,40 @@ export const StyledShortener = styled.div`
     text-align: left;
     color: var(--red);
     opacity: 0.7;
+  }
+
+  @media screen and (min-width: 900px) {
+    max-width: 1100px;
+    background-image: url(${images.desktopShortener});
+    background-repeat: no-repeat;
+    background-position: right top;
+    padding: 3rem;
+
+    form {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    .shortener-input {
+      font-size: 1.25rem;
+      position: relative;
+      width: 75%;
+    }
+
+    .shortener-btn {
+      font-size: 1.15rem;
+      margin: 0;
+      padding: 0;
+      width: 20%;
+      min-height: 100%;
+    }
+
+    .error-txt {
+      position: absolute;
+      top: 115px;
+      font-size: 0.95rem;
+    }
   }
 `;
