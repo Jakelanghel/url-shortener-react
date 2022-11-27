@@ -29,6 +29,24 @@ export const StyledContainerMenu = styled.div`
     padding: 1rem 0;
   }
 
+  .nav-item:hover {
+    cursor: pointer;
+  }
+
+  .nav-left {
+    .nav-item:hover {
+      color: var(--black);
+    }
+  }
+
+  .nav-btn:hover {
+    opacity: 0.5;
+  }
+
+  .login-btn:hover {
+    color: var(--black);
+  }
+
   .nav-btn {
     background-color: var(--cyan);
     border: none;

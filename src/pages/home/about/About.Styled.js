@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const StyledAbout = styled.section`
   width: 100%;
   background-color: var(--light-gray);
+  padding: 0 1rem;
   padding-top: 7.5rem;
   padding-bottom: 5rem;
 
@@ -10,7 +11,6 @@ export const StyledAbout = styled.section`
 
   h2 {
     text-align: center;
-
     font-size: 1.75rem;
   }
 
@@ -74,20 +74,16 @@ export const StyledAbout = styled.section`
 
   @media screen and (min-width: 900px) {
     .line::before {
-      content: "";
       height: 7px;
-      width: 700px;
-      background-color: var(--cyan);
-
-      position: absolute;
+      width: 600px;
       top: 50%;
       left: 8rem;
-      z-index: 0;
     }
 
     .container-about-header {
       h2 {
-        font-size: 2.25rem;
+        font-size: 2.5rem;
+        margin-top: 9rem;
       }
 
       p {
@@ -98,14 +94,14 @@ export const StyledAbout = styled.section`
     .container-about-body {
       display: flex;
       justify-content: center;
-      max-width: 1500px;
       gap: 1rem;
       padding: 0 3rem;
+      max-width: 1400px;
     }
 
     .container-about {
       width: 200px;
-      height: 350px;
+      height: 375px;
       flex: 1;
     }
 
@@ -132,9 +128,31 @@ export const StyledAbout = styled.section`
     }
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1100px) {
+    .container-about-body {
+      padding: 0 7rem;
+    }
+
+    .line::before {
+      width: 700px;
+    }
+
+    .container-about {
+      width: 200px;
+      height: 325px;
+      flex: 1;
+    }
+  }
+
+  @media screen and (min-width: 1300px) {
     .line::before {
       width: 1000px;
+    }
+
+    .container-about {
+      width: 200px;
+      height: 300px;
+      flex: 1;
     }
   }
 `;

@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import { StyledNav } from "./Nav.Styled";
 import { images } from "../../constants/images";
@@ -7,9 +7,9 @@ import { AnimatePresence } from "framer-motion";
 import ContainerMenu from "../nav/container-menu/ContainerMenu";
 import MotionMenu from "./container-menu/MotionMenu";
 
-const Nav = () => {
-  const { navIsOpen, toggleNav, screenWidth } = React.useContext(Context);
-  console.log(screenWidth);
+const Nav = (props) => {
+  const { navIsOpen, toggleNav } = React.useContext(Context);
+
   return (
     <StyledNav>
       <div className="container-logo">
@@ -19,7 +19,7 @@ const Nav = () => {
       </div>
 
       <AnimatePresence>
-        {navIsOpen || screenWidth >= 900 ? (
+        {navIsOpen || props.screenWidth >= 900 ? (
           <MotionMenu>
             <ContainerMenu />
           </MotionMenu>

@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const StyledShortUrl = styled.div`
-  width: 90%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   background: var(--white);
@@ -53,7 +53,7 @@ export const StyledShortUrl = styled.div`
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    max-width: 1100px;
+    max-width: 1200px;
     p {
       /* padding: 0; */
       font-size: 1.1rem;

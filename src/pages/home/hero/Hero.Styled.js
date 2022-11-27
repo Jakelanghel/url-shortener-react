@@ -4,8 +4,11 @@ export const StyledHero = styled.main`
   width: 100%;
   display: flex;
   flex-direction: column;
+  padding: 0 1rem;
   padding-top: 1rem;
   padding-bottom: 8rem;
+  max-width: 1400px;
+  margin: 0 auto;
 
   .container-hero-img {
     width: 100%;
@@ -13,8 +16,7 @@ export const StyledHero = styled.main`
   }
 
   .hero-img {
-    /* width: 500px;
-    width: 155%; */
+    width: 500px;
     max-width: 600px;
   }
 
@@ -58,6 +60,7 @@ export const StyledHero = styled.main`
     }
 
     .hero-img {
+      margin-left: 3rem;
     }
 
     .container-hero-copy {
@@ -70,9 +73,13 @@ export const StyledHero = styled.main`
     }
 
     h1 {
-      max-width: 400px;
+      max-width: 450px;
+      font-size: 3.5rem;
       text-align: left;
-      margin: 1rem 0;
+      line-height: 4rem;
+      margin: 0;
+      margin-top: 2rem;
+      margin-bottom: 0.5rem;
     }
 
     p {
@@ -83,6 +90,20 @@ export const StyledHero = styled.main`
 
     .container-hero-img {
       margin: 0;
+    }
+  }
+
+  @media screen and (min-width: 1100px) {
+    padding-left: 7rem;
+    .hero-img {
+      width: 700px;
+    }
+  }
+
+  @media screen and (min-width: 1300px) {
+    .hero-img {
+      max-width: none;
+      width: 700px;
     }
   }
 `;

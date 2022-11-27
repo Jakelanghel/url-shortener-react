@@ -29,6 +29,10 @@ export const StyledFooter = styled.footer`
     margin-bottom: 0.75rem;
   }
 
+  a:hover {
+    color: var(--cyan);
+  }
+
   .title {
     font-size: 1.15rem;
     font-weight: 700;
@@ -88,7 +92,9 @@ export const StyledFooter = styled.footer`
     }
   }
 
-  @media screen and (min-width: 1100px) {
+  @media screen and (min-width: 1200px) {
+    padding: 5rem 7rem;
+
     .container-footer-links {
       gap: 5rem;
     }

@@ -14,4 +14,8 @@ export const GetStartedBtn = styled.button`
   p {
     font-size: 1.5rem;
   }
+
+  :hover {
+    opacity: 0.5;
+  }
 `;

@@ -6,11 +6,11 @@ import { Context } from "../../../Context";
 import { motion } from "framer-motion";
 import { AnimatePresence } from "framer-motion";
 
-const Hero = () => {
-  const { navIsOpen, screenWidth } = React.useContext(Context);
+const Hero = (props) => {
+  const { navIsOpen } = React.useContext(Context);
 
   const heroImgVariants =
-    screenWidth >= 900 || !navIsOpen
+    props.screenWidth >= 900 || !navIsOpen
       ? {
           hidden: {
             opacity: 1,
@@ -50,9 +50,7 @@ const Hero = () => {
           animate="visible"
           className="container-hero-img"
         >
-          {/* <div className="container-hero-img"> */}
           <img src={images.mainImg} alt="" className={"hero-img"} />
-          {/* </div> */}
         </motion.div>
       </AnimatePresence>
     </StyledHero>

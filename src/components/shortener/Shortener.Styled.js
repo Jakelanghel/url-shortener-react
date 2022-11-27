@@ -9,6 +9,8 @@ export const StyledShortener = styled.div`
   background-position: right -30px;
   padding: 2rem;
   border-radius: 10px;
+  max-width: 1200px;
+  margin: 0 auto;
 
   position: absolute;
   top: -85px;
@@ -41,6 +43,9 @@ export const StyledShortener = styled.div`
     background-color: var(--cyan);
   }
 
+  .shortener-btn:hover {
+    opacity: 0.5;
+  }
   .input {
     color: var(--very-dark-blue);
   }
@@ -63,7 +68,6 @@ export const StyledShortener = styled.div`
   }
 
   @media screen and (min-width: 900px) {
-    max-width: 1100px;
     background-image: url(${images.desktopShortener});
     background-repeat: no-repeat;
     background-position: right top;

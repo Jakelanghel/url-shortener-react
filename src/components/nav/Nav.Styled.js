@@ -5,13 +5,15 @@ export const StyledNav = styled.nav`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-left: 1.5rem;
   padding-top: 1.5rem;
-  padding: 2rem 1rem;
+  max-width: 1400px;
+  margin: 0 auto;
 
   .menu-icon {
-    width: 50px;
+    width: 75px;
     padding: 0.5rem;
-    padding-left: 1rem;
+    padding: 1.5rem;
   }
 
   .motion-menu {
@@ -37,6 +39,10 @@ export const StyledNav = styled.nav`
       width: 145px;
     }
 
+    .logo:hover {
+      cursor: pointer;
+    }
+
     .menu-icon {
       display: none;
     }
@@ -56,5 +62,9 @@ export const StyledNav = styled.nav`
       left: 0;
       right: 0;
     }
+  }
+
+  @media screen and (min-width: 1100px) {
+    padding: 2rem 7rem;
   }
 `;

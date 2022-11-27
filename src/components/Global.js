@@ -16,6 +16,7 @@ export const GlobalStyles = createGlobalStyle`
         --white: hsl(0, 0%, 100%);
         --light-gray: rgba(240, 241, 246, 1);
         --nav-bg: rgba(58, 48, 83, 1);
+        --black: rgba(0, 0, 0, 1);
 
     }
 
@@ -41,8 +42,9 @@ export const GlobalStyles = createGlobalStyle`
         display: block;
     }
 
-   
-
+    h1, h2, h3 {
+        color: var(--black);
+    }
     
      p {
         max-width: 325px;
@@ -50,12 +52,10 @@ export const GlobalStyles = createGlobalStyle`
         color: var(--grayish-violet);
      }
 
-
-   
-
     .title-margin {
         margin: 1rem 0;
     }
+
 
     @media screen and (min-width: 900px){
         body {

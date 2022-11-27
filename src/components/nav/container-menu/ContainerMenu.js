@@ -17,9 +17,10 @@ const ContainerMenu = () => {
         </NavLink>
       </div>
       <div className="nav-right">
-        <a className="nav-item " href="#">
+        <a className="nav-item login-btn" href="#">
           login
         </a>
+
         <button className="nav-item nav-btn">sign up</button>
       </div>
     </StyledContainerMenu>
