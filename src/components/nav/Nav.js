@@ -11,7 +11,7 @@ const Nav = (props) => {
   const { navIsOpen, toggleNav } = React.useContext(Context);
 
   return (
-    <StyledNav>
+    <StyledNav className="nav container-max-width">
       <div className="container-logo">
         <NavLink to="/">
           <img src={images.logo} alt="shortly" className="logo" />

@@ -7,7 +7,6 @@ export const StyledNav = styled.nav`
   align-items: center;
   padding-left: 1.5rem;
   padding-top: 1.5rem;
-  max-width: 1400px;
   margin: 0 auto;
 
   .menu-icon {

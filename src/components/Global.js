@@ -56,6 +56,10 @@ export const GlobalStyles = createGlobalStyle`
         margin: 1rem 0;
     }
 
+    .container-max-width {
+        max-width: 1400px;
+    }
+
 
     @media screen and (min-width: 900px){
         body {

@@ -9,7 +9,7 @@ export const StyledShortener = styled.div`
   background-position: right -30px;
   padding: 2rem;
   border-radius: 10px;
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
 
   position: absolute;

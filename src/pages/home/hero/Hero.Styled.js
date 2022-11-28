@@ -7,7 +7,6 @@ export const StyledHero = styled.main`
   padding: 0 1rem;
   padding-top: 1rem;
   padding-bottom: 8rem;
-  max-width: 1400px;
   margin: 0 auto;
 
   .container-hero-img {
@@ -69,7 +68,6 @@ export const StyledHero = styled.main`
       display: flex;
       flex-direction: column;
       align-items: flex-start;
-      margin-top: 2rem;
     }
 
     h1 {
@@ -78,7 +76,6 @@ export const StyledHero = styled.main`
       text-align: left;
       line-height: 4rem;
       margin: 0;
-      margin-top: 2rem;
       margin-bottom: 0.5rem;
     }
 

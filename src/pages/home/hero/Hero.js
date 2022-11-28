@@ -33,7 +33,7 @@ const Hero = (props) => {
         };
 
   return (
-    <StyledHero>
+    <StyledHero className="hero container-max-width">
       <div className="container-hero-copy">
         <h1 className="title-margin">More than just shorter links</h1>
         <p>
