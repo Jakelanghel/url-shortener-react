@@ -31,20 +31,19 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Git Hub Repo](https://github.com/Jakelanghel/url-shortener-react)
+- Live Site URL: [Git Hub Pages](https://your-live-site-url.com)
 
 ### Built with
 
-- Semantic HTML5 markup
 - CSS custom properties
-- Flexbox
-- CSS Grid
-- Mobile-first workflow
 - [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
+- [Styled Components](https://www.framer.com/motion/) - For styles
+- [Framer Motion](https://styled-components.com/) - For animations
+- Flexbox
+- Mobile-first workflow
 
 ## Author
 
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+- Frontend Mentor - [@Jakelanghel](https://www.frontendmentor.io/profile/Jakelanghel)
+- Github - [@jakelanghel](https://github.com/Jakelanghel)
