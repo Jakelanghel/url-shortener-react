@@ -32,7 +32,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Git Hub Repo](https://github.com/Jakelanghel/url-shortener-react)
-- Live Site URL: [Git Hub Pages](https://your-live-site-url.com)
+- Live Site URL: [Git Hub Pages](https://jakelanghel.github.io/url-shortener-react/)
 
 ### Built with
 
