@@ -36,6 +36,9 @@ const ContextProvider = ({ children }) => {
               },
             ],
           }));
+        })
+        .catch(() => {
+          console.log("ERROR");
         });
     } else {
       const input = e.target.previousSibling;

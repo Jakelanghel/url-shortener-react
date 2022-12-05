@@ -17,9 +17,9 @@ const ContainerMenu = () => {
         </NavLink>
       </div>
       <div className="nav-right">
-        <a className="nav-item login-btn" href="#">
+        <button className="nav-item login-btn" href="#">
           login
-        </a>
+        </button>
 
         <button className="nav-item nav-btn">sign up</button>
       </div>

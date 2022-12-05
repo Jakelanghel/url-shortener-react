@@ -43,6 +43,11 @@ export const StyledContainerMenu = styled.div`
     opacity: 0.5;
   }
 
+  .login-btn {
+    background-color: transparent;
+    border: none;
+  }
+
   .login-btn:hover {
     color: var(--black);
   }
